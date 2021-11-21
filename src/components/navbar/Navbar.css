@@ -44,3 +44,17 @@
     align-items: center;
 }
 
+.gpt3__navbar-sign button,
+.gpt3__navbar-menu_container button{
+    padding: .4rem 1rem;
+    font-family: var(--font-family);
+    color: #fff;
+    background: #ff4820;
+    font-weight: 500;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
