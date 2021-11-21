@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLin } from 'react-icons/ri';
 import './Navbar.css';
 import logo from '../../assets/logo.svg';
 
 function Navbar() {
+    const [toggleMenu, setToggleMenu] = useState(false);
+    
     return (
         <div className='gpt3__navbar'>
             <div className='gpt3__navbar-links'>
@@ -18,6 +20,11 @@ function Navbar() {
                     <p><a href="#blog">Library</a></p>
                 </div>
             </div>
+            <div className="gpt3__navbar-sign">
+                <p>Sign in</p>
+                <button type="button">Sign up</button>
+            </div>
+            <div className="gpt3__navbar-menu"></div>
         </div>
     )
 }
